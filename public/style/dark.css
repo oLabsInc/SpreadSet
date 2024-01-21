@@ -9,7 +9,7 @@ body {
     background-color: #000000;
     color: #fcfcfc;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 0.25rem;
 }
@@ -25,6 +25,11 @@ h3 {
 h5 {
     font-size: 2rem;
     color: aqua;
+}
+h6 {
+    font-size: 1.5rem;
+    color: aqua;
+    margin-bottom: 1.5rem;
 }
 #spreadspaceBackground {
     position: fixed;
@@ -64,7 +69,7 @@ h5 {
 }
 .spreadspace-header, .spreadspace-body, .spreadspace-footer, .spreadspace-controls {
     backdrop-filter: blur(4px);
-    border: solid 1px #fcfcfca3;
+    border: solid 1px #bdbdbd50;
     margin-top: 3rem;
     width: 90%;
     margin-inline: auto;
@@ -91,8 +96,29 @@ h5 {
     box-shadow:  0 0 20px rgba(0, 255, 255, 0.438);
     max-width: 100%;
 }
+.spreadspace-footer p {
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: lighter;
+}
 
-
+.spreadspace-controls {
+    margin-bottom: 2.5rem;
+}
+.spreadspace-navigation-routes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+.spreadspace-navigation-route a {
+    font-weight: bold;
+    /* text-decoration: none; */
+    color: aqua;
+}
 @keyframes pulse {
     0% {
         opacity: 0.1;
