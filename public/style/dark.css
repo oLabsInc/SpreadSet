@@ -83,7 +83,7 @@ filter: hue-rotate(30deg);
     max-height: 100vh;
     overflow-y: auto;
     z-index: 1000;
-
+    font-family: "univia-pro", sans-serif;
 }
 .materials-list {
     position: relative;
@@ -250,7 +250,7 @@ filter: hue-rotate(30deg);
     margin-inline: auto;
     margin-top: 5rem;
     padding: 1rem;
-    padding-bottom: 2rem;
+    border: solid 1px #ffffff5e;
     border-radius: 1rem;
 }
 
@@ -260,13 +260,12 @@ filter: hue-rotate(30deg);
     margin-bottom: 2rem;
 }
 .spreadspace-test-area-header h3 {
-    border-bottom: solid 2px #fff;
+    border-bottom: solid 2px #ffffff83;
     padding-bottom: 0.5rem;
     font-weight: bold;
 }
 .spreadspace-test-area-body {
     background-color: rgba(0, 0, 0, 0.5);
-    border: solid 1px #fff;
     backdrop-filter: blur(4px);
     margin-top: 1rem;
     padding: 1rem;
@@ -276,36 +275,141 @@ filter: hue-rotate(30deg);
     
 .ar-place-marker-container {
     padding: 0.1rem;
-    border: solid 1px lime;
-    border-style: dashed;
     border-radius: 0.25rem;
 }
 
 .ar-place-marker {
-    border: solid 1px orangered;
-    border-style: dashed;
     border-radius: 0.5rem;
     overflow: hidden;
     padding: 0.25rem;
 }
 
 .ar-place-marker-header {
-    border: solid 1px red;
+    border-bottom: solid 1px #ffffff83;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-    padding: 0.5rem;
+    padding: 1rem;
+    padding-top: 0;
+}
+.ar-place-marker-header h5 {
+    color: rgba(0, 255, 255, 0.75);
+    text-shadow: -1px 1px 2px #fff;
+     font-size: 2rem;
+     font-weight: bolder;
 }
 .ar-place-marker-body {
-    border: solid 1px orange;
-    padding: 0.25rem;
-}
-.ar-place-marker-footer {
-    border: solid 1px purple;
-    padding: 0.5rem;
-    border-bottom-left-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+    padding: 1rem;
 }
 
+.ar-place-marker-phone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+}
+.ar-place-marker-phone .phone-number-layout {
+}
+.ar-place-marker-phone .phone-number-layout a {
+    text-decoration: none;
+    font-weight: bold;
+    color: aqua;
+    font-size: 1.5rem;
+}
+.ar-place-marker-address {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.5rem;
+}
+.address-layout {
+}
+.address-layout > div:not(:first-child) {
+    text-align: end;
+    color: #d3d3d3;
+    padding: 0.1rem;
+}
+.address-street-1 {
+    padding: 0.25rem;
+    font-size: 1.5rem;
+}
+.ar-place-marker-website {
+}
+.ar-place-marker-rating {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    text-shadow: -1px 1px 2px #fbff0093;
+    opacity: 0.8;
+    cursor: pointer;
+    user-select: none;
+}
+.ar-place-marker-price {
+    color: yellowgreen;
+    text-shadow: -1px 1px 2px rgba(211, 233, 167, 0.767);
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 0.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: bolder;
+    cursor: default;
+    user-select: none;
+}
+.ar-place-marker-favorite {
+    cursor: pointer;
+    user-select: none;
+}
+.ar-place-marker-hours {
+    cursor: default;
+    user-select: none;
+}
+
+.ar-place-marker-icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.25rem;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 0.25rem;
+    margin-right: 15px;
+    background-color: rgba(0, 255, 255, 0.5);
+    border: solid 1px #fff;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    user-select: none;
+}
+
+
+
+.lowlighted {
+    color: #a8a8a8a8;
+    text-shadow: -1px 1px 2px #ffffffa9;
+}
+
+.ar-place-marker-footer {
+    border-top: solid 1px #ffffff83;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0.25rem;
+    justify-content: space-around;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+.current-operation-state {
+    color: yellowgreen;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
 
 
 
