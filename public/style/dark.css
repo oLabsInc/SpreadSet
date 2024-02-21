@@ -170,6 +170,35 @@ filter: hue-rotate(30deg);
 .spreadspace-body-section-image img:hover {
     opacity: 1;
 }
+
+
+.icon-set {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+.spreadspace-body-section-image-icon {
+    border: solid 1px aqua;
+    background-color: #00000085;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    box-shadow: inset 0 0 10px aqua;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spreadspace-body-section-image-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px aqua;
+}
 .spreadspace-footer p {
     text-align: center;
     padding: 0.5rem;
@@ -212,7 +241,89 @@ filter: hue-rotate(30deg);
 }
 
 
+.spreadspace-test-area {
+    background-color: rgba(0, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    color: #fff;
+    max-width: 90vw;
+    width: 800px;
+    margin-inline: auto;
+    margin-top: 5rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+}
 
+.spreadspace-test-area-header {
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+.spreadspace-test-area-header h3 {
+    border-bottom: solid 2px #fff;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+.spreadspace-test-area-body {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 1px #fff;
+    backdrop-filter: blur(4px);
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+    
+.ar-place-marker-container {
+    padding: 0.1rem;
+    border: solid 1px lime;
+    border-style: dashed;
+    border-radius: 0.25rem;
+}
+
+.ar-place-marker {
+    border: solid 1px orangered;
+    border-style: dashed;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding: 0.25rem;
+}
+
+.ar-place-marker-header {
+    border: solid 1px red;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    padding: 0.5rem;
+}
+.ar-place-marker-body {
+    border: solid 1px orange;
+    padding: 0.25rem;
+}
+.ar-place-marker-footer {
+    border: solid 1px purple;
+    padding: 0.5rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 @keyframes pulse {
     0% {
