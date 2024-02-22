@@ -18,3 +18,14 @@ allMarkers.forEach(marker => {
     
 })
 
+const allIconSets = document.querySelectorAll('.icon-set')
+
+allIconSets.forEach(iconSet => {
+    const
+        iconSetHeaderEl = document.createElement('div'),
+        iconSetValue = iconSet.getAttribute('data-el-header')
+        
+    iconSetHeaderEl.classList.add('icon-set-header')
+    iconSetHeaderEl.innerText = iconSetValue
+    iconSet.prepend(iconSetHeaderEl)
+})
